@@ -28,6 +28,11 @@ CONFIG_PACKAGE_default-settings=y" >> .config
 echo "CONFIG_PSI=y
 CONFIG_KPROBES=y" >> target/linux/x86/64/config-6.6
 
+#luci-theme-aurora
+git clone https://github.com/eamonxg/luci-theme-aurora.git package/luci-theme-aurora
+
+#luci-app-aurora-config
+git clone https://github.com/eamonxg/luci-app-aurora-config.git package/luci-app-aurora-config
 
 # 集成CPU性能跑分脚本
 #echo "CONFIG_PACKAGE_coremark=y" >> .config
@@ -37,7 +42,6 @@ CONFIG_KPROBES=y" >> target/linux/x86/64/config-6.6
 
 # iStoreOS-settings
 git clone --depth=1 -b main https://github.com/xiaomeng9597/istoreos-settings package/default-settings
-
 
 # 定时限速插件
 echo "CONFIG_PACKAGE_luci-app-eqosplus=y
