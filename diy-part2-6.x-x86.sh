@@ -41,9 +41,9 @@ git clone https://github.com/eamonxg/luci-app-aurora-config.git package/luci-app
 
 
 # iStoreOS-settings
-git clone --depth=1 -b main https://github.com/xiaomeng9597/istoreos-settings package/default-settings
+git clone --depth=1 -b main https://github.com/hza81007155/istoreos-settings package/default-settings
 
 # 定时限速插件
-echo "CONFIG_PACKAGE_luci-app-eqosplus=y
-CONFIG_PACKAGE_luci-i18n-eqosplus-zh-cn=y" >> .config
-git clone --depth=1 https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
+#echo "CONFIG_PACKAGE_luci-app-eqosplus=y
+#CONFIG_PACKAGE_luci-i18n-eqosplus-zh-cn=y" >> .config
+#git clone --depth=1 https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
