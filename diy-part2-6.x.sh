@@ -28,13 +28,19 @@ cp -f $GITHUB_WORKSPACE/configfiles/coremark/coremark-arm64.sh package/base-file
 chmod 755 package/base-files/files/bin/coremark-arm64
 chmod 755 package/base-files/files/bin/coremark.sh
 
+#luci-theme-aurora
+git clone https://github.com/eamonxg/luci-theme-aurora.git package/luci-theme-aurora
+
+#luci-app-aurora-config
+git clone https://github.com/eamonxg/luci-app-aurora-config.git package/luci-app-aurora-config
+
 
 # 复制dts设备树文件到指定目录下
 cp -a $GITHUB_WORKSPACE/configfiles/dts/rk3588/* target/linux/rockchip/dts/rk3588/
 
 
 # iStoreOS-settings
-git clone --depth=1 -b main https://github.com/xiaomeng9597/istoreos-settings package/default-settings
+git clone --depth=1 -b main https://github.com/hza81007155/istoreos-settings package/default-settings
 
 
 # 定时限速插件
